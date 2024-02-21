@@ -1,0 +1,34 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class GuessingGame {
+    public static void main(String[] args) {
+        Random random = new Random();
+        int targetNumber = random.nextInt(10000) + 1;
+
+        System.out.println("Welcome to the Guessing Game!");
+        System.out.println("I have chosen a number between 1 and 10000. Try to guess it!");
+
+        Scanner scanner = new Scanner(System.in);
+        int guess;
+        int attempts = 0;
+
+        do {
+            System.out.print("Please enter a number between 1 and 10000: ");
+            guess = scanner.nextInt();
+            attempts++;
+
+            if (guess < targetNumber) {
+                System.out.println("HIGHER");
+            } else if (guess > targetNumber) {
+                System.out.println("LOWER");
+            } else {
+                System.out.println("WINNER!");
+            }
+
+            System.out.println("Eligible range: 1 - " + (guess - 1) + " or " + (guess + 1) + " - 10000");
+        } while (guess != targetNumber);
+
+        System.out.println("Congratulations! You guessed the number in " + attempts + " attempts.");
+    }
+}

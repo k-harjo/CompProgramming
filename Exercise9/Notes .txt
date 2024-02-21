@@ -1,0 +1,125 @@
+Remember to speak clearly, provide clear visual cues by highlighting relevant code snippets, and maintain a steady pace to ensure that viewers can follow along easily!
+
+____________________________________
+Flowchart
+
+
+**Introduction:**
+- Start by explaining that you'll be walking them through a flowchart, a visual representation of how the program's functionality unfolds.
+
+**1. Start Node:**
+- Point out the "Start" node on the flowchart and explain that this is where the program begins its execution.
+
+**2. Initialize Store:**
+- Highlight the step where the program initializes the store by adding sample products to the inventory. Mention that this is the setup phase before any purchases are made.
+
+**3. Purchase Process:**
+- Walk them through the steps of the purchase process:
+    - Check Inventory: Explain that the program checks if the desired product is available in the inventory.
+    - Add to Cart: If the product is available, the program adds it to the shopping cart and removes it from the inventory.
+    - Print Purchase: Explain that the program prints a message indicating the purchase was successful.
+
+**4. Cancel Purchase Process:**
+- Walk through the steps of the cancel purchase process:
+    - Check Cart: Explain that the program checks if the product to be canceled is in the shopping cart.
+    - Remove from Cart: If the product is found, the program removes it from the cart and adds it back to the inventory.
+    - Print Cancellation: Explain that the program prints a message indicating the cancellation was successful.
+
+**5. Display Inventory:**
+- Highlight the step where the program displays the final inventory after purchases and cancellations. Explain that this gives a summary of the available products.
+
+**6. Display Cart:**
+- Walk them through the step where the program displays the contents of the shopping cart. Mention that this shows what items were purchased.
+
+**7. End Node:**
+- Point out the "End" node on the flowchart and explain that this is where the program's execution concludes.
+
+**8. Encourage Exploration:**
+- Encourage them to follow the flowchart as they review the code. Suggest they run the program and see how it matches the flowchart's logic.
+
+**9. Thank You and Next Steps:**
+- Thank them for going through the flowchart and understanding the program's sequence of actions. Encourage them to ask questions and explore more programming concepts.
+
+**10. Additional Scenarios:**
+- If applicable, you can also mention that the flowchart can help them visualize how the program handles different scenarios, such as when a product is not available or when the cart is empty.
+
+Remember to use visual cues, like pointing at the flowchart elements, and speak clearly to help the person follow the logical sequence of the program's flowchart.
+
+_____________________________________
+UML
+
+**Introduction:**
+- Start by explaining that you'll be discussing the UML (Unified Modeling Language) diagram that visually represents the structure and relationships between the classes in the code.
+
+**1. Class Diagram Overview:**
+- Give a brief overview of the classes depicted in the UML diagram: `SalableProduct`, `InventoryManager`, `ShoppingCart`, and `StoreFront`.
+
+**2. Class Relationships:**
+- Highlight the associations between the classes. Explain that the arrows between classes indicate a relationship, and you'll be discussing the different types of relationships.
+
+**3. Association Relationship:**
+- Discuss the association between `StoreFront` and `InventoryManager`. Explain that `StoreFront` has a relationship with `InventoryManager` since it can access and manage the store's inventory. Mention that this is a "Has-A" relationship, where a store has an inventory manager.
+
+**4. Aggregation Relationship:**
+- Point out the aggregation relationship between `InventoryManager` and `SalableProduct`. Explain that `InventoryManager` aggregates multiple instances of `SalableProduct` to manage the store's inventory. This is a "whole-part" relationship.
+
+**5. Association Role:**
+- Mention that each association has a role. For example, the association between `StoreFront` and `InventoryManager` has the role "manages" because the store front manages the store's inventory.
+
+**6. Multiplicity:**
+- Explain the multiplicity notation. For instance, between `StoreFront` and `InventoryManager`, you'd explain that there is one `StoreFront` that's associated with one `InventoryManager`. In contrast, the aggregation relationship between `InventoryManager` and `SalableProduct` shows that an `InventoryManager` can manage multiple `SalableProducts`.
+
+**7. Class Attributes and Methods:**
+- Briefly point out that the attributes and methods of each class are represented in the UML diagram. Attributes are listed along with their data types, and methods are shown with their signatures.
+
+**8. Conclusion:**
+- Summarize the main takeaways from the UML diagram discussion: the relationships between classes, the roles they play, and how they interact to form a functional online store simulation.
+
+**9. Encourage Exploration:**
+- Encourage the person you're walking through to explore the code further while referencing the UML diagram. Suggest they try different scenarios and see how the classes interact.
+
+**10. Thank You and Next Steps:**
+- Thank the person for taking the time to understand the UML diagram and how it relates to the code. Invite them to ask any questions and encourage them to dive into more programming concepts and diagrams.
+
+______________________________________
+
+Code
+
+**Introduction:**
+- Start by introducing the purpose of the code: creating a simple online store simulation with classes for products, inventory management, shopping carts, and the store front.
+
+**1. Class Overview:**
+- Briefly explain the purpose of each class in the code: `SalableProduct`, `InventoryManager`, `ShoppingCart`, and `StoreFront`.
+
+**2. SalableProduct Class:**
+- Describe how the `SalableProduct` class represents a product with attributes such as name, description, price, and quantity.
+- Point out the constructor and getters/setters that allow us to create and manipulate product instances.
+
+**3. InventoryManager Class:**
+- Explain that the `InventoryManager` class manages the list of available products in the store.
+- Discuss the `addProduct` method, which adds products to the inventory list.
+- Mention the `getProductList` method that returns the list of products.
+
+**4. ShoppingCart Class:**
+- Describe how the `ShoppingCart` class represents a customer's shopping cart.
+- Highlight the `addProduct` and `removeProduct` methods for managing cart items.
+- Mention the `getCartItems` method that returns the list of products in the cart.
+
+**5. StoreFront Class:**
+- Explain that the `StoreFront` class acts as the main interface for the online store.
+- Discuss the `initializeStore` method for setting up the store with initial products.
+- Highlight the `purchaseProduct` method, which simulates purchasing a product by moving it from inventory to the shopping cart.
+- Discuss the `cancelPurchase` method, which cancels a purchase and returns the product to inventory.
+- Mention the newly added `getInventoryManager` method that returns the inventory manager instance.
+
+**6. StoreFrontApplication Class:**
+- Describe the `StoreFrontApplication` class, which demonstrates the functionality of the entire store.
+- Point out the creation of store and cart instances.
+- Explain how the sample products are added to the inventory.
+- Show the purchase and cancellation of a product.
+- Display the final inventory and cart contents.
+
+**Conclusion:**
+- Summarize the main functionality demonstrated in the video: initializing the store, purchasing products, canceling purchases, and managing the inventory and shopping cart.
+- Encourage viewers to explore the code further and try different scenarios.
+- Thank the viewers for watching and invite them to like, share, and subscribe for more programming-related content.

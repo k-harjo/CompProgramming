@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class DigitSumCalculator {
+    public static void main(String[] args) {
+        // Prompt the user to enter a 5-digit positive integer
+        System.out.print("Enter a 5-digit positive integer: ");
+        Scanner scanner = new Scanner(System.in);
+        int number = scanner.nextInt();
+        
+        // Compute each individual digit and calculate the sum
+        int digit1 = number / 10000;
+        int digit2 = (number / 1000) % 10;
+        int digit3 = (number / 100) % 10;
+        int digit4 = (number / 10) % 10;
+        int digit5 = number % 10;
+        int sum = digit1 + digit2 + digit3 + digit4 + digit5;
+        
+        // Display the sum of the digits
+        System.out.println("The sum of the digits is " + sum);
+    }
+}
+
